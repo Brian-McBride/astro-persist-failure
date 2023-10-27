@@ -1,0 +1,12 @@
+---
+import Nav from '../components/Nav';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Page Three">
+  <main class="flex flex-col items-center justify-center p-4 gap-4">
+    <Nav client:only="react" transition:persist="Nav" />
+    <h1 class="text-2xl text-blue-800 dark:text-blue-200">Page Three</h1>
+    <p class="text-sm text-gray-900 dark:text-gray-100">This is page 3.</p>
+  </main>
+</Layout>
